@@ -31,7 +31,15 @@ from flask_login import login_user, current_user, logout_user, login_required
 @app.route("/home")
 def home():
 	#retrieve all posts from db
-	posts = Post.query.all()
+	#posts = Post.query.all()
+
+	page = request.args.get('page', 1, type=int)	
+	# setting type "int" so that it throws error if anyone tries to pass something 
+	# other than integer in pg no.
+	
+	posts_ordered_by_latest_first = Post.query.order_by(Post.date_posted.desc())
+	posts = posts_ordered_by_latest_first.paginate(page=page, per_page=5)
+
 	return render_template('home.html', posts=posts)
 
 
@@ -191,3 +199,18 @@ def delete_post(post_id):
 	flash('Your post has been deleted!', 'success')
 
 	return redirect(url_for('home'))
+
+
+@app.route("/user/<string:username>")
+def user_posts(username):
+	page = request.args.get('page', 1, type=int)	
+	# setting type "int" so that it throws error if anyone tries to pass something 
+	# other than integer in pg no.
+
+	user = User.query.filter_by(username=username).first_or_404()	#get first user with this username or 404
+	
+	posts_by_username = Post.query.filter_by(author=user)
+	posts_ordered_by_latest_first = posts_by_username.order_by(Post.date_posted.desc())
+	posts = posts_ordered_by_latest_first.paginate(page=page, per_page=5)
+
+	return render_template('user_posts.html', posts=posts, user=user)
