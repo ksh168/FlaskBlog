@@ -1,8 +1,12 @@
+import os
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+
 from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 
+from flask_mail import Mail
 
 app = Flask(__name__)
 
@@ -18,4 +22,17 @@ login_manager = LoginManager(app)
 login_manager.login_view = 'login'      #function name is passed here
 login_manager.login_message_category = 'info'
 
+#for reset password mail
+app.config['MAIL_SERVER']='in-v3.mailjet.com'
+app.config['MAIL_PORT']=587
+app.config['MAIL_USE_TLS']=True
+
+#using environment variables
+app.config['MAIL_USERNAME']=os.environ.get('EMAIL_USER')
+app.config['MAIL_PASSWORD']=os.environ.get('EMAIL_PASS')
+
+mail = Mail(app)
+
+
+#keep this line at last only
 from flaskblog import routes

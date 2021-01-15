@@ -7,7 +7,6 @@
 				<legend class="border-bottom mb-4">Join Today!</legend>
 				<div class="form-group">
 					{{ form.username.label(class="form-control-label") }}
-
 					{% if form.username.errors %}
 						{{ form.username(class="form-control form-control-lg is-invalid") }}
 						<div class="invalid-feedback">
@@ -18,7 +17,6 @@
 					{% else %}
 						{{ form.username(class="form-control form-control-lg") }}
 					{% endif %}
-
 				</div>
 				<div class="form-group">
 					{{ form.email.label(class="form-control-label") }}
@@ -33,11 +31,9 @@
 					{% else %}
 						{{ form.email(class="form-control form-control-lg") }}
 					{% endif %}
-
 				</div>
 				<div class="form-group">
 					{{ form.password.label(class="form-control-label") }}
-
 					{% if form.password.errors %}
 						{{ form.password(class="form-control form-control-lg is-invalid") }}
 						<div class="invalid-feedback">
@@ -48,7 +44,6 @@
 					{% else %}
 						{{ form.password(class="form-control form-control-lg") }}
 					{% endif %}
-
 				</div>
 				<div class="form-group">
 					{{ form.confirm_password.label(class="form-control-label") }}
@@ -63,7 +58,6 @@
 					{% else %}
 						{{ form.confirm_password(class="form-control form-control-lg") }}
 					{% endif %}
-
 				</div>
 			</fieldset>
 			<div class="form-group">
@@ -73,8 +67,8 @@
 	</div>
 	<div class="border-top pt-3">
 		<small class="text-muted">
-			Already have an Account? <a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
+			Already have an Account? 
+			<a class="ml-2" href="{{ url_for('login') }}">Sign In</a>
 		</small>
-
 	</div>
 {% endblock content %}
