@@ -1,6 +1,6 @@
 # FlaskBLog
 
-### This project can be viewed [here](flaskblog.eastus.cloudapp.azure.com)
+### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
 
 Blog website made using Flask and deployed on Azure
 
