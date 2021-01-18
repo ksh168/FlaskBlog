@@ -1,5 +1,7 @@
 # FlaskBLog
 
+![](FlaskBlog_website.PNG)
+
 ### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
 
 Blog website made using Flask and deployed on Azure
