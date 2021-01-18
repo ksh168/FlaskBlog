@@ -4,8 +4,6 @@
 
 ![](FlaskBlog_website.png)
 
-### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
-
 
 ### Capabilities
 
