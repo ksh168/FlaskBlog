@@ -1,6 +1,6 @@
 # FlaskBLog
 
-![](FlaskBlog_website.PNG)
+![](FlaskBlog_website.png)
 
 ### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
 
