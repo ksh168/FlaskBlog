@@ -32,6 +32,19 @@ Users can:-
 
 
 
+### Steps:
+
+Always recommended to create a virtual environment
+
+* Enter the virtual environment and then
+```pip install -r requirements.txt```
+
+.....
+
+
+
+
+
 ### Acknowledgments:
 
-Inspired by [CoreyMSchafer's](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g) Flask [Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
+Inspired by [Corey M Schafer's](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g) Flask [Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH)
