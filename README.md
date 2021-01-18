@@ -11,10 +11,12 @@
 
 * Profile images are compressed using [**Pillow**](https://pypi.org/project/Pillow/) before saving to db
 
+* [**Nginx**](https://www.nginx.com/) and [**gunicorn**](https://gunicorn.org/) are used to run the server
+
 
 ### Features:
 
-Users can:
+Users can:-
 
 :white_check_mark: Register new account, login to existing one
 
