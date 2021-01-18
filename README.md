@@ -1,8 +1,22 @@
 # FlaskBLog
 
+## This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
+
 ![](FlaskBlog_website.png)
 
 ### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
+
+
+### Capabilities
+
+Users can:
+* login, register
+* Create, update, delete posts
+* request password reset email
+* change account username, email, password
+* choose a custom profile picture
+
+
 
 Blog website made using Flask and deployed on Azure
 
