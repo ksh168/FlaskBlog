@@ -33,7 +33,7 @@ Users can:-
 
 
 
-### Steps:
+### Setup:
 
 Always recommended to create a virtual environment
 
