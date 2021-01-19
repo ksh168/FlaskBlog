@@ -13,6 +13,7 @@
 
 * [**Nginx**](https://www.nginx.com/) and [**gunicorn**](https://gunicorn.org/) are used to run the server
 
+* Website is https secured using [Let's Encrypt](https://letsencrypt.org/) certificate
 
 ### Features:
 
