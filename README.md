@@ -2,7 +2,7 @@
 
 ### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
 
-![](FlaskBlog_website.png)
+![](FlaskBlog_website.gif)
 
 
 * Blog website made using **Flask** and deployed on **Azure**. Uses **sqlite** database
