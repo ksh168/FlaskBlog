@@ -1,6 +1,6 @@
 # Flask Blog
 
-### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com)
+### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com) [No longer available]
 
 ![](FlaskBlog_website.gif)
 
