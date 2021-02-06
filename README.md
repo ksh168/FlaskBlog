@@ -1,11 +1,11 @@
 # Flask Blog
 
-### This project can be viewed [here](http://flaskblog.eastus.cloudapp.azure.com) [No longer available]
+### This project can be viewed [here](https://flaskblog1.pythonanywhere.com/)
 
 ![](FlaskBlog_website.gif)
 
 
-* Blog website made using **Flask** and deployed on **Azure**. Uses **sqlite** database
+* Blog website made using **Flask** and deployed on **PythonAnywhere**. Uses **sqlite** database
 
 * Passwords are encrypted using [**bcrypt**](https://www.npmjs.com/package/bcrypt)
 
