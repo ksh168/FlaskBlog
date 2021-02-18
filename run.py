@@ -1,4 +1,4 @@
-#only purpose of this file to run the application
+# only purpose of this file to run the application
 from flaskblog import create_app
 
 app = create_app()
